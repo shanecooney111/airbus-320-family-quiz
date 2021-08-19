@@ -29,7 +29,29 @@
                 <a onclick="runGame('quiz5');" class="game-btn">Quiz5</a>
                 <a onclick="runGame('quiz6');" class="game-btn">Quiz6</a>
             </div>
+
+            <!-- This is to be placed on a modal screen. Code inspired by the w3schools howto on how to create a modal box -->
+
+            <div><button id="modal-button" class="button">How to play</button>
+                <div id="instructionsModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <span class="close-button">&times;</span>
+                            <h2>How to play</h2>
+                        </div>
+                        <div class="modal-body">
+                            <p> 1 Click on a category you would like to play.</p>
+                            <p> 2 In each category 10 questions will be selected randonly from the question bank.</p>
+                            <p> 3 Each correct answer will highlight green and each incorrect answer will highlight red.</p>
+                            <p> 4 Every correct answer is worth 10 points. There is no negative marking.</p>
+                            <p> 5 You may leave the game anytime by pressing the exit button.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <script src="assets/js/script.js"></script>
+            <script src="assets/js/modal.js"></script>
 </body>
 
 </html>

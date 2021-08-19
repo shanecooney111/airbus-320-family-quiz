@@ -62,3 +62,64 @@ h1 {
     color: white;
     background: teal;
 }
+
+/* Beginning of Modal Button Styling  */
+.modal {
+    display:none;
+    position:fixed;
+    z-index: 1;
+    left:0;
+    top:0;
+    height: 100%;
+    width: 100%;
+    overflow: none;
+    background-color: grey;
+}
+
+.modal-content {
+    background-color:grey;
+    margin:15% auto;
+    border: 1px solid;
+    animation-name: openmodal;
+    animation-duration: 1s;
+}
+
+.modal-header h2 {
+    text-align: center;
+}
+
+.modal-header {
+    background-color: teal;
+    padding:15px;
+    color:white;
+    font-size:20px;
+}
+
+.modal-body {
+    padding:10px 20px;
+    background-color: white;
+    font-size:20px;
+    color:black;
+}
+
+.modal-body p {
+  font-size:20px;
+  text-align: center;
+}
+
+.close-button {
+    color: black;
+    float:right;
+    font-size: 40px;
+}
+
+.close-button:hover,.closeBtn:focus {
+    color:#000;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+@keyframes openmodal {
+from{opacity:0}
+to   {opacity: 1;}}
